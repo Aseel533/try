@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coaches_page_hr.css">
+    <title>Coaches</title>
+
+
+    <style>
+
+.Scroll{
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 0.625em; /* 10px */
+    margin-bottom: 6.25em; /* 100px */
+    /*added fpr responsevness*/
+    padding: 0.625em; /* 10px */
+    
+
+
+
+}
+
+.coache{
+    background-color: rgba(128, 128, 128, 0.123);
+    max-width: 12.5em /*200px*/;
+    min-width: 12.5em /*200px*/;
+    height: 25em; /* 400px */
+    position: relative;
+    margin-left:0.3125em; /* 5px */
+    border-radius: 1.25em 1.25em; /* 20px */
+
+    text-align: center;
+    overflow: hidden; /* Ensures no overflow */
+   
+    word-wrap: break-word; /* Allows long words to wrap */
+
+    
+    
+    
+    
+    
+   
+    
+}
+#coache1::before{
+    content: '';
+    background-color: #B4D6CD ;
+    height: 1.25em; /* 20px */
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 1.25em/* 20px */;
+    border-top-right-radius: 1.25em/* 20px */;
+    
+    top: 0; /* Ensure it stays at the top of .coache */
+    left: 0;
+
+}
+
+
+
+
+#coache2::before{
+    content: '';
+    background-color:#FFDA76;
+    height: 1.25em; /* 20px */
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 1.25em/* 20px */;
+    border-top-right-radius: 1.25em/* 20px */;
+
+    top: 0; /* Ensure it stays at the top of .coache */
+    left: 0;
+}
+
+#coache3::before,#coache7::before{
+    content: '';
+    background-color:#FF8C9E;
+    height: 1.25em; /* 20px */
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 1.25em/* 20px */;
+    border-top-right-radius: 1.25em/* 20px */;
+
+    top: 0; /* Ensure it stays at the top of .coache */
+    left: 0;
+}
+
+#coache4::before,#coache8::before{
+    content: '';
+    background-color:#FF4E88;
+    height: 1.25em; /* 20px */
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 1.25em/* 20px */;
+    border-top-right-radius: 1.25em/* 20px */;
+
+    top: 0; /* Ensure it stays at the top of .coache */
+    left: 0;
+}
+
+#coache5::before{
+    content: '';
+    background-color:#B4D6CD;
+    height: 1.25em; /* 20px */
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 1.25em/* 20px */;
+    border-top-right-radius: 1.25em/* 20px */;
+
+    top: 0; /* Ensure it stays at the top of .coache */
+    left: 0;
+}
+
+#coache6::before{
+    content: '';
+    background-color:#FFDA76;
+    height: 1.25em; /* 20px */
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 1.25em/* 20px */;
+    border-top-right-radius: 1.25em/* 20px */;
+
+    top: 0; /* Ensure it stays at the top of .coache */
+    left: 0;
+}
+
+
+
+.coacheImg{
+    /*width: 120px;
+    height: 180px;*/
+    max-width: 60%;
+    height: auto;
+    /*translate: 35px 25px;*/
+   /* margin-left: 40px;*/
+    margin-top: 1.5625em; /* 25px */
+}
+
+
+.Information{
+    text-align: center;
+    margin-top: 2.5em; /* 40px */
+    word-break: break-word;
+    white-space: normal;
+}
+
+
+@media (max-width: 600px) {
+    .Scroll {
+        justify-content: flex-start;
+        padding-bottom: 0.625em; /* 10px */
+    }
+    .coache {
+        min-width: 8.75em /*140px*/;
+         /* Adjust width for smaller screens */
+        height: 20em /*320px*/; /* Reduce height slightly */
+    }
+}
+    </style>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav id="navbar">
+        <div id="navdiv"> 
+            <div id="logo"><a href="#">kiddo Heaven</a></div>
+            <ul>
+                <li><a href="#" class="Page">Activities</a></li>
+                <li><a href="#" class="Page">Coaches</a></li>
+                <li><a href="#" class="Page">Administrator dashboard</a></li>
+                <li><a href="#" class="Page">Parent dashboard</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- end navbar-->
+    <br>
+    <!--breadcrumbs-->
+    <p class="breadcrumbs"><a href="#">Home ></a> <a href="coaches_page.html">Coaches</a></p>
+     <!-- end breadcrumbs-->
+
+      <!--page title-->
+    <div class="container"><div class="child"><h1>Coaches</h1></div></div>
+    
+    <br>
+
+    <div class="Scroll">
+    <div id="coache1" class="coache"> <img src="Ahmed.jpg" alt="Coache Ahmed" class="coacheImg"><p class="Information">Name: Ahmed</p><p class="Information">Area Of Expertise: Volleyball</p></div>
+    <br>
+    <div id="coache2" class="coache"> <img src="Sofia.jpg" alt="Coache Sofia" class="coacheImg"><p class="Information">Name: Sofia</p><p class="Information">Area Of Expertise: Horse Riding</p></div>
+    <br>
+    <div id="coache3" class="coache"><img src="Khalid.jpg" alt="Coache Khalid" class="coacheImg"><p class="Information">Name: Khalid</p><p class="Information">Area Of Expertise:Karate</p></div>
+    <br>
+    <div id="coache4" class="coache"> <img src="Natasha.jpg" alt="Coache Natasha" class="coacheImg"><p class="Information">Name: Natasha</p><p class="Information">Area Of Expertise: Gymnastics</p></div>
+    <br>
+    <div id="coache5" class="coache"> <img src="Omar.jpg" alt="Coache Omar" class="coacheImg"><p class="Information">Name: Omar</p><p class="Information">Area Of Expertise: Football</p></div>
+    <br>
+    <div id="coache6" class="coache"><img src="Nina.jpg" alt="Coache Nina" class="coacheImg"><p class="Information">Name: Nina</p><p class="Information">Area Of Expertise: Swimming</p></div>
+    <br>
+    <div id="coache7" class="coache"> <img src="David.jpg" alt="Coache David" class="coacheImg"><p class="Information">Name: David</p><p class="Information">Area Of Expertise: Tennis</p></div>
+    <br>
+    <div id="coache8" class="coache"><img src="Sarah.jpg" alt="Coache Sarah" class="coacheImg"><p class="Information">Name: Sarah</p><p class="Information">Area Of Expertise: Ballet</p></div>
+    </div>
+    <!--end page title-->
+
+    <br>
+    
+<!--
+    <footer>
+        <div id="footer">
+            
+            <img src="phone.png" alt="" class="try">
+                <h4 id="contactUs">Contact Us</h4>
+                <img src="phone.png" alt="phone" id="phoneIcon" class="ContactIcons"> <img src="mail.png" alt="mail" id="mailIcon" class="ContactIcons"> <img src="location.png" alt="location" id="locationIcon" class="ContactIcons">
+                <p id="phone">+966&nbsp;53667&nbsp;2891</p>
+                <p id="mail">KiddoHeaven@gmail.com</p>
+                <p id="location">Riyadh, Saudi Arabia</p>
+
+            
+                <h4 id="socialMedia">Social Media</h4>
+                <div id="socialMediaIcons"><img src="instagram.png" alt="instagram" class="ContactIcons"> <img src="facebook.png" alt="facebook" class="ContactIcons">  <img src="x.png" alt="x" class="ContactIcons"></div>
+                <div id="copyRight"><p>copyright</p></div>
+            
+              
+            
+
+        </div>
+    </footer>
+    -->
+    <footer>
+        <div id="FOOTER">
+        <div id="footer">
+            <div class="footer-section"><img src="phone.png" alt="" class="try"></div>
+
+
+                 <div class="footer-section">
+                    
+                    <h4 id="contactUs">Contact Us</h4>
+                    <div class="contactus">
+                        
+
+                       <div>
+                         <img src="phone.png" alt="phone" id="phoneIcon" class="ContactIcons"> 
+                         <p id="phone">+966&nbsp;53667&nbsp;2891</p>
+                     </div>
+                      <div>
+                         <img src="mail.png" alt="mail" id="mailIcon" class="ContactIcons"> 
+                         <p id="mail">KiddoHeaven@gmail.com</p>
+                     </div>
+                    
+                      <div>
+                         <img src="location.png" alt="location" id="locationIcon" class="ContactIcons">
+                          <p id="location">Riyadh, Saudi Arabia</p>
+                     </div>
+                
+                    </div>
+                    <br>
+                    <!--<div id="copyRight"><p>copyright</p></div>-->
+                </div>
+                
+
+                <div class="footer-section">
+                    <h4 id="socialMedia" >Social Media</h4>
+                    <div id="socialMediaIcons" ><img src="instagram.png" alt="instagram" class="ContactIcons"> <img src="facebook.png" alt="facebook" class="ContactIcons">  <img src="x.png" alt="x" class="ContactIcons"></div>
+                </div>
+                
+               
+                
+            
+              
+            
+
+        </div>
+        <div id="copyRight"><p>copyright</p></div>
+        <br>
+        
+    </div>
+    </footer>
+</body>
+</html>
