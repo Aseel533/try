@@ -1,0 +1,15 @@
+span,p{
+    background: red;
+}
+
+p{
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    display: inline-block;
+}
+
+span{
+    display: block;
+    margin: 20px;
+}
